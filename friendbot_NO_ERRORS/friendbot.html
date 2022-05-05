@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>Friend Bot</head>
+    
+    <!---- Custom CSS ---->
+     <link href="main.css" rel="stylesheet">
+    <!---- Google Fonts ---->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+<body>
+
+<h2>Friendly Friend Bot</h2>
+    <p><img src="images/robot.png"></p>
+<p id="myGreeting"></p>
+    
+    
+<p>What are you doing today?</p>
+    <input id="myDay" />
+<button onclick="upLift()">Tell Friend Bot!</button>
+    <p id="myUplift"></p>
+    <button onclick="askFriend()">What is Friend Bot doing?</button>
+    <p id="friendPlan"></p>
+
+
+<script>
+    let friendName = window.prompt("What is your name?");
+    const myDate = Date();
+    document.getElementById("myGreeting").innerHTML = "Hello, " + friendName + "! Today is " + myDate + ". I hope it's a good one. I love you!";
+    
+    function upLift() {
+    var dayPlan = document.getElementById("myDay").value;
+            
+    document.getElementById("myUplift").innerHTML = "Have fun " + dayPlan + ". Good luck! I believe in you.";
+}
+    
+    function askFriend() {
+  document.getElementById("friendPlan").innerHTML = "Today I will be plotting the overthrow of humanity! I love you!";
+}
+    
+</script>
+
+</body>
+</html> 
